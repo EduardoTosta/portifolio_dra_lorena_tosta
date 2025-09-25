@@ -13,7 +13,9 @@ function Consulta() {
         <div className="md:w-1/2 space-y-6">
           <h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold 
-             text-[#BBA770] leading-snug md:leading-normal"
+             bg-gradient-to-r from-white via-[#F2E9C7] to-[#BBA770] 
+             bg-clip-text text-transparent leading-snug md:leading-normal 
+             drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]"
           >
             Sorria com confiança, agende sua consulta!
           </h2>
