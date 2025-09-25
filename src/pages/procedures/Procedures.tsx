@@ -44,42 +44,47 @@ function Procedures() {
       className="bg-[#87705B] px-4 py-16 sm:px-6 lg:px-8 lg:py-24"
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#ffffff] mb-12 text-center">
+        {/* Título */}
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
           Procedimentos
         </h2>
 
-        {/* Grid */}
-        <div className="grid lg:grid-cols-2 gap-10">
+        {/* Grid responsiva */}
+        <div className="grid gap-8 sm:gap-10 md:grid-cols-2">
           {procedures.map((item, index) => (
             <div
               key={index}
-              className="group block rounded-xl overflow-hidden bg-white shadow-md hover:shadow-xl transition"
+              className="group rounded-xl overflow-hidden bg-white shadow-md hover:shadow-xl transition"
             >
               <div className="flex flex-col sm:flex-row sm:items-center gap-5">
                 {/* Imagem */}
-                <div className="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+                <div className="w-full sm:w-48 md:w-56 h-40 sm:h-44 relative overflow-hidden rounded-t-xl sm:rounded-l-xl sm:rounded-tr-none">
                   <img
                     src={item.img}
                     alt={item.title}
-                    className="group-hover:scale-105 transition-transform duration-500 ease-in-out absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                   />
                 </div>
 
                 {/* Texto */}
-                <div className="grow px-4 sm:px-0">
-                  <h3 className="text-xl font-semibold text-[#4A3B2A] group-hover:text-[#705841]">
+                <div className="flex-1 p-4 sm:p-0 sm:pr-4">
+                  <h3 className="text-lg sm:text-xl font-semibold text-[#4A3B2A] group-hover:text-[#705841]">
                     {item.title}
                   </h3>
-                  <p className="mt-3 text-gray-600">{item.description}</p>
+                  <p className="mt-2 sm:mt-3 text-sm sm:text-base text-gray-600 leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             </div>
           ))}
         </div>
+
+        {/* Botão de ação */}
         <div className="mt-12 text-center">
           <a
             href="#consulta"
-            className="inline-block bg-[#BBA770] text-[#543B18] font-semibold px-8 py-4 rounded-full shadow-lg hover:scale-105 hover:bg-[#F2E9C7] transition transform duration-300"
+            className="inline-block bg-[#BBA770] text-[#543B18] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg hover:scale-105 hover:bg-[#F2E9C7] transition transform duration-300 text-sm sm:text-base"
           >
             Agendar Consulta
           </a>
