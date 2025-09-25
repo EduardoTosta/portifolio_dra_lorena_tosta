@@ -6,9 +6,9 @@ function Procedures() {
       img: "https://ik.imagekit.io/eduardotosta/port_lorena/assets/harmonizacao.png?updatedAt=1758024274158",
     },
     {
-      title: "Restaurações Estéticas",
+      title: "Restaurações Estéticas e Funcionais",
       description:
-        "Tratamentos estéticos e provisórios para recuperar o sorriso.",
+        "Recuperação do sorriso com tratamentos que unem estética, função e remoção de cáries.",
       img: "https://ik.imagekit.io/eduardotosta/port_lorena/assets/restauracoes_esteticas.png?updatedAt=1758024329241",
     },
     {
