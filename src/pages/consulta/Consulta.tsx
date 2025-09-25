@@ -13,8 +13,7 @@ function Consulta() {
         <div className="md:w-1/2 space-y-6">
           <h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold 
-             bg-gradient-to-r from-[#FFF] via-[#D1B464] to-[#8C6A2F] 
-             bg-clip-text text-transparent leading-snug md:leading-normal"
+             text-[#BBA770] leading-snug md:leading-normal"
           >
             Sorria com confiança, agende sua consulta!
           </h2>
